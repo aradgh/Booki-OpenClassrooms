@@ -13,9 +13,13 @@
   color: var(--main-color);
 }
 
+/* Le body a un margin:8px par défaut.
+Est-ce une bonne pratique de la mettre à 0 pour respecter
+la maquette? */
 body {
   display: flex;
   justify-content: center;
+  margin: 0;
 }
 
 .main-container {
@@ -37,8 +41,18 @@ body {
 .header_titles {
   display: flex;
 }
+
+/* J'utilise ici 17 lignes pour les headers link.
+N'y a-t-il pas un moyen d'alléger tout ça? */
+
+/* Pour espacer les deux header links, j'ai 
+utilisé un margin-left sur les 2 liens (alors
+que seulement un seul en a besoin), est-ce 
+bonne pratique ou y a-t-il une meilleure façon
+ de le faire? */
 .header_link {
   padding-top: 16px;
+  margin-left: 68px;
 }
 .header_link:link,
 .header_link:visited {
@@ -47,10 +61,16 @@ body {
   cursor: pointer;
 }
 
+/* box-shadow est-elle la bonne propriété pour faire le hover? */
+/* Est-ce qu'un lien doit rester actif quand on clique dessus?
+Ou doit-il revenir à son aspect par défaut? */
+.header_link:hover,
 .header_link:link:active,
 .header_link:visited:active {
-  color: black;
+  color: var(--main-color);
+  box-shadow: inset 0 2px 0 0 var(--main-color);
 }
+
 .section-title {
   margin: 0;
   font-size: 22px;

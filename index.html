@@ -40,12 +40,49 @@
         <p class="subtitle">En plein centre-ville ou en pleine nature</p>
         <div class="search-bar">
           <form class="header-titles search-bar">
-            <label class="label-search-bar">
+            <!-- Il faut avoir un texte dans le label -->
+            <div class="prepend-search-bar">
               <i class="fa-solid fa-location-dot location-dot-style"></i>
-            </label>
-            <input type="text" placeholder="Marseille, France" class="input-search-bar"/>
-            <input type="button" value="Rechercher" class="button-search-bar">
+            </div>
+            <input type="text" class="input-search-bar" />
+            <input type="button" value="Rechercher" class="button-search-bar" />
           </form>
+        </div>
+        <div class="filter-bar">
+          <span class="filter-title">Filtres</span>
+          <button class="filter-button">
+            <i
+              class="fa-solid fa-money-bill-wave filter-icon-style filter-icon-style-money-bill-wave"
+            ></i
+            >Économique
+          </button>
+          <button class="filter-button">
+            <i
+              class="fa-solid fa-person filter-icon-style filter-icon-style-person"
+            ></i
+            >Familial
+          </button>
+          <button class="filter-button">
+            <i
+              class="fa-solid fa-heart filter-icon-style filter-icon-style-heart"
+            ></i
+            >Romantique
+          </button>
+          <button class="filter-button">
+            <i
+              class="fa-solid fa-fire filter-icon-style filter-icon-style-fire"
+            ></i
+            >Nos pépites
+          </button>
+        </div>
+
+        <div class="info-bar">
+          <div class="ellipse-info-icon">
+            <i class="fa-solid fa-info info-icon-style"></i>
+          </div>
+          <span class="info-text"
+            >Plus de 500 logements sont disponibles dans cette ville</span
+          >
         </div>
         <div class="hebergements-and-populaires">
           <section class="hebergements"></section>
@@ -62,9 +99,9 @@
                 />
                 <div class="card-content">
                   <div class="card-txt">
-                    <h3 class="card-title">Hôtel Le soleil du matin</h3>
+                    <h3 class="card-title">Auberge la Canebière</h3>
                     <p class="card-subtitle">
-                      Nuit à partir de 128<span class="euro">€</span>
+                      Nuit à partir de 25<span class="euro">€</span>
                     </p>
                   </div>
                   <div class="card-rating">

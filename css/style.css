@@ -228,11 +228,11 @@ body {
   box-sizing: border-box;
 }
 
-.hebergements-and-populaires a:link {
+a:link {
   text-decoration: inherit;
   cursor: pointer;
 }
-.hebergements-and-populaires a:visited {
+a:visited {
   color: inherit;
 }
 
@@ -343,6 +343,44 @@ body {
   margin-bottom: 10px;
   display: flex;
   gap: 1px;
+}
+
+/****** Activités à Marseille ***********/
+.activites-a-marseille {
+  padding: 30px;
+}
+
+.activites-cards {
+  display: flex;
+  flex-direction: row;
+  margin-top: 35px;
+  gap: 30px;
+}
+
+.activites-cards a {
+  width: 25%;
+}
+
+.activites-cards .card {
+  height: 439px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.activites-cards img {
+  width: 100%;
+  height: 380px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.activites-cards .card-txt {
+  padding: 20px 19px;
+}
+
+.activites-cards h3 {
+  margin: 0;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */

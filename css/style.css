@@ -174,7 +174,7 @@ body {
 
 .ellipse-info-icon {
   border: 1px solid var(--filter-border-color);
-  border-radius: 25px;
+  border-radius: 12px;
   padding: 1.6px 8.2px;
 }
 
@@ -210,6 +210,10 @@ body {
   color: var(--main-bg-color);
 }
 
+.icon-star-style {
+  transform: scale(1.104);
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
   display: flex;
@@ -218,9 +222,18 @@ body {
 
 .hebergements-and-populaires section {
   background-color: var(--main-bg-color);
-  border-radius: 20px;
+  border-radius: 15px;
   padding: 30px;
+  margin-bottom: 35px;
   box-sizing: border-box;
+}
+
+.hebergements-and-populaires a:link {
+  text-decoration: inherit;
+  cursor: pointer;
+}
+.hebergements-and-populaires a:visited {
+  color: inherit;
 }
 
 /****** Hebergements ***********/
@@ -228,6 +241,58 @@ body {
   width: 65%;
 }
 
+.hebergements-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.hebergements-cards a {
+  width: 30.86%;
+}
+
+.hebergements-cards .card {
+  display: flex;
+  flex-direction: column;
+}
+
+.hebergements-cards img {
+  height: 114px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.hebergements-cards .card-content {
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.hebergements-cards .card-title {
+  margin-top: 9px;
+  margin-bottom: 8px;
+}
+
+.hebergements-cards .card-subtitle {
+  margin: 0;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.hebergements-cards .card-rating {
+  margin-top: 8px;
+  margin-bottom: 15px;
+  display: flex;
+  gap: 2.38px;
+}
+
+.show-more {
+  font-size: 18px;
+  margin: 0;
+}
 /****** Populaires ***********/
 .populaires {
   width: 32%;
@@ -239,16 +304,20 @@ body {
   align-items: center;
 }
 
+.populaires-title .chart-icon-style {
+  transform: scale(1.125);
+}
+
 .populaires-cards .card {
   display: flex;
-  margin-top: 33px;
+  margin-top: 30px;
 }
 
 .populaires-cards img {
   width: 33%;
-  height: 134px;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  height: 136px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
 .populaires-cards .card-content {
@@ -267,10 +336,13 @@ body {
 
 .populaires-cards .card-subtitle {
   margin: 0;
+  font-size: 14px;
 }
 
 .populaires-cards .card-rating {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  gap: 1px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -314,5 +386,3 @@ body {
 @media (max-width: 767.98px) {
   /* ... */
 }
-
-/* TO REMOVE Branch1 test merge branch2 modif */

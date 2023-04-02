@@ -34,54 +34,67 @@
         </div>
       </header>
       <main>
-        <h1 class="title">
-          Trouvez votre hébergement pour des vacances de rêve
-        </h1>
-        <p class="subtitle">En plein centre-ville ou en pleine nature</p>
-        <div class="search-bar">
-          <form class="header-titles search-bar">
-            <div class="prepend-search-bar">
-              <i class="fa-solid fa-location-dot location-dot-style"></i>
-            </div>
-            <input type="text" class="input-search-bar" />
-            <input type="button" value="Rechercher" class="button-search-bar" />
-          </form>
-        </div>
-        <div class="filter-bar">
-          <span class="filter-title">Filtres</span>
-          <button class="filter-button">
-            <i
-              class="fa-solid fa-money-bill-wave filter-icon-style filter-icon-style-money-bill-wave"
-            ></i
-            >Économique
-          </button>
-          <button class="filter-button">
-            <i
-              class="fa-solid fa-person filter-icon-style filter-icon-style-person"
-            ></i
-            >Familial
-          </button>
-          <button class="filter-button">
-            <i
-              class="fa-solid fa-heart filter-icon-style filter-icon-style-heart"
-            ></i
-            >Romantique
-          </button>
-          <button class="filter-button">
-            <i
-              class="fa-solid fa-fire filter-icon-style filter-icon-style-fire"
-            ></i
-            >Nos pépites
-          </button>
-        </div>
-
-        <div class="info-bar">
-          <div class="ellipse-info-icon">
-            <i class="fa-solid fa-info info-icon-style"></i>
+        <div class="info-group">
+          <h1 class="title">
+            Trouvez votre hébergement pour des vacances de rêve
+          </h1>
+          <p class="subtitle">En plein centre-ville ou en pleine nature</p>
+          <div class="search-bar">
+            <form class="header-titles search-bar">
+              <div class="prepend-search-bar">
+                <i class="fa-solid fa-location-dot location-dot-style"></i>
+              </div>
+              <input type="text" class="input-search-bar" />
+              <!-- Version desktop, tablette sans icône -->
+              <input
+                type="submit"
+                value="Rechercher"
+                class="button-search-bar without-search-icon"
+              />
+              <!-- Version mobile avec icône -->
+              <input
+                type="submit"
+                value="&#xF002;"
+                class="button-search-bar with-search-icon fa"
+              />
+            </form>
           </div>
-          <span class="info-text"
-            >Plus de 500 logements sont disponibles dans cette ville</span
-          >
+          <div class="filter-bar">
+            <span class="filter-title">Filtres</span>
+            <button class="filter-button">
+              <i
+                class="fa-solid fa-money-bill-wave filter-icon-style filter-icon-style-money-bill-wave"
+              ></i
+              >Économique
+            </button>
+            <button class="filter-button">
+              <i
+                class="fa-solid fa-person filter-icon-style filter-icon-style-person"
+              ></i
+              >Familial
+            </button>
+            <button class="filter-button">
+              <i
+                class="fa-solid fa-heart filter-icon-style filter-icon-style-heart"
+              ></i
+              >Romantique
+            </button>
+            <button class="filter-button">
+              <i
+                class="fa-solid fa-fire filter-icon-style filter-icon-style-fire"
+              ></i
+              >Nos pépites
+            </button>
+          </div>
+
+          <div class="info-bar">
+            <div class="ellipse-info-icon">
+              <i class="fa-solid fa-info info-icon-style"></i>
+            </div>
+            <span class="info-text"
+              >Plus de 500 logements sont disponibles dans cette ville</span
+            >
+          </div>
         </div>
         <div class="hebergements-and-populaires">
           <section class="hebergements" id="hebergementsMarseille">
@@ -321,10 +334,10 @@
                   </div>
                 </article>
               </a>
-              <a href="#">
-                <h3 class="show-more">Afficher plus</h3>
-              </a>
             </div>
+            <a href="#">
+              <h3 class="show-more">Afficher plus</h3>
+            </a>
           </section>
           <section class="populaires">
             <div class="populaires-title">
@@ -473,7 +486,7 @@
       </main>
       <footer class="footer">
         <div class="column">
-          <h3 class="show-more">À propos</h3>
+          <h3>À propos</h3>
           <ul>
             <li><a href="#">Fonctionnement du site</a></li>
             <li><a href="#">Conditions générales </a></li>
@@ -481,14 +494,14 @@
           </ul>
         </div>
         <div class="column">
-          <h3 class="show-more">Nos hébergements</h3>
+          <h3>Nos hébergements</h3>
           <ul>
             <li><a href="#">Charte qualité</a></li>
             <li><a href="#">Proposer votre hôtel</a></li>
           </ul>
         </div>
         <div class="column">
-          <h3 class="show-more">Assistance</h3>
+          <h3>Assistance</h3>
           <ul>
             <li><a href="#">Centre d’aide</a></li>
             <li><a href="#">Nous contacter</a></li>
